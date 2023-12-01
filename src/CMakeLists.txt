@@ -178,6 +178,7 @@ target_link_libraries(cosim
         libzip::zip
         XercesC::XercesC
         yaml-cpp
+        Taskflow::Taskflow
     )
 
 if(LIBCOSIM_WITH_PROXYFMU)
