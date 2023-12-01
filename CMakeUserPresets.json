@@ -1,0 +1,9 @@
+{
+    "version": 4,
+    "vendor": {
+        "conan": {}
+    },
+    "include": [
+        "/home/davy/.tigre-test/libcosim-davy/build/Debug/generators/CMakePresets.json"
+    ]
+}

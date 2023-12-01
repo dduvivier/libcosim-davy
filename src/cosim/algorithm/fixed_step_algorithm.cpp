@@ -10,6 +10,7 @@
 #include "cosim/log/logger.hpp"
 #include "cosim/utility/thread_pool.hpp"
 
+#include <taskflow/taskflow.hpp>
 #include <algorithm>
 #include <cstdlib>
 #include <numeric>
