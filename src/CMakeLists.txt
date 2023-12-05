@@ -8,6 +8,7 @@ set(publicHeaders
     "cosim/algorithm.hpp"
     "cosim/algorithm/algorithm.hpp"
     "cosim/algorithm/fixed_step_algorithm.hpp"
+    "cosim/algorithm/waterfall_fixed_step_algorithm.hpp"
     "cosim/algorithm/simulator.hpp"
     "cosim/config.hpp"
     "cosim/exception.hpp"
@@ -65,6 +66,7 @@ set(privateHeaders
 )
 set(sources
     "cosim/algorithm/fixed_step_algorithm.cpp"
+    "cosim/algorithm/waterfall_fixed_step_algorithm.cpp"
     "cosim/error.cpp"
     "cosim/exception.cpp"
     "cosim/execution.cpp"
@@ -173,12 +175,12 @@ target_link_libraries(cosim
         Boost::date_time
         Boost::log
         Microsoft.GSL::GSL
+        Taskflow::Taskflow
     # PRIVATE # Temporarily disabled due to https://github.com/conan-io/conan/issues/13302
         ${FMILibrary_LIBRARIES}
         libzip::zip
         XercesC::XercesC
         yaml-cpp
-        Taskflow::Taskflow
     )
 
 if(LIBCOSIM_WITH_PROXYFMU)
